@@ -92,8 +92,14 @@ return [
         ],
 
         'mongodb' => [
+<<<<<<< Updated upstream
             'driver' => 'mongodb',
             'dsn' => env('DB_DSN')
+=======
+            'driver'   => 'mongodb',
+            'database' => env('MONGO_DB_DATABASE'),
+            'dsn' => env('DB_URI', 'mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false'),
+>>>>>>> Stashed changes
         ],
 
     ],

@@ -6,6 +6,9 @@ use Jenssegers\Mongodb\Eloquent\Model;
 
 class App extends Model
 {
+
+    protected $connection = 'mongodb';
+    protected $collection = 'apps';
     /**
      * The attributes that are mass assignable.
      *
